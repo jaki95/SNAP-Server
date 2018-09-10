@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+
+<PropertyGroup>
+<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+</PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <OutputPath>C:\Users\ltete\Documents\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\PhotonIntro\bin</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>C:\Users\ltete\Documents\Photon Server\Normal Server Solution\deploy\PhotonIntro\bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+	    <Reference Include="ExitGames.Logging.Log4Net">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\ExitGames.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ExitGamesLibs">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\ExitGamesLibs.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon.SocketServer">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\Photon.SocketServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon.SocketServer.NUnit">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\Photon.SocketServer.NUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3DotNet">
+      <HintPath>..\..\Photon Server\Normal Server Solution\lib\Photon3DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonChatApi">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\PhotonChatApi.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonHostRuntimeInterfaces">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\PhotonHostRuntimeInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonLoadbalancingApi">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\PhotonLoadbalancingApi.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>..\..\Photon Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\websocket-sharp.dll</HintPath>
+    </Reference>
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+   
+  </Target>
+
+
+</Project>
